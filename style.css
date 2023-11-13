@@ -1,0 +1,523 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main{
+  flex: 1;
+}
+
+
+html, body {
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+nav {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid #e0dfdf;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.nav-list li a {
+  padding: 15px 20px;
+  text-decoration: none;
+  color: black;
+  font-size: calc(0.5em + 1vw);
+  display: inline-block;
+  border-radius: 20px;
+  transition: box-shadow 0.15s;
+}
+
+.nav-list li a:hover {
+  background-color: #ffffff;
+  color: black;
+  box-shadow: 0px 5px 10px rgba(96, 96, 96, 0.549);
+}
+
+
+/* Section styles, including the main content container and individual sections */
+.content-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  height: 100%;
+}
+
+.sidebar {
+ 
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-right: 1px solid #e0dfdf;
+
+
+ 
+
+}
+
+.sidebar img {
+  max-width: 100%;
+  height: auto; 
+  object-fit: cover; 
+  display: block; /* Removes any inline spacing */
+  margin: 1rem auto; /* Centers the image and adds margin on the top and bottom */
+}
+
+.sidebar .profile-photo {
+  border-radius: 50%; 
+  width: 30vw; 
+  height: 30vw; 
+  object-fit: cover; 
+  display: block;
+  margin: 1rem auto; 
+  max-width: 300px; 
+  max-height: 300px; 
+  min-width: 100px; 
+  min-height: 100px; 
+  margin-top: 75px;
+}
+
+
+.sidebar h2, .sidebar p {
+  /* Remove specific padding-left values and instead center the text */
+  text-align: center; 
+  margin: 0 auto; 
+  max-width: 90%; 
+  font-size: calc(1vw + 10px); 
+}
+
+
+.sidebar h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem; 
+}
+
+
+.sidebar p {
+  margin-bottom: 1rem; 
+}
+
+
+#about {
+  padding: 0.5rem;
+  
+  text-align: left ;
+  margin-top: 70px;
+
+  
+}
+#about h1{
+  font-size: 40px;
+  font-weight: normal;
+  color: #555;
+  padding-bottom: 40px;
+  padding-left: 5vw;
+  padding-top: 30px;
+}
+
+
+#about p {
+  margin-top: 40px;
+  max-width: 700px;
+  margin-right: auto;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  margin-left: 5vw;
+}
+
+#about table{
+  margin-left: 15px;
+  margin-right: auto;
+  width: 80%;
+  max-width: 600px;
+  padding-top: 50px;
+}
+
+#about td{
+  text-align: left;
+  padding: 10px;
+  padding-left: 5vw;
+}
+
+#about table td{
+  padding-right: 20px;
+}
+
+
+#experiences h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 5vw;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  font-weight: normal;
+}
+
+.experiences {
+  display: flex;
+  align-items:center;
+  margin-bottom: 15px;
+  padding-left: 5vw;
+}
+
+.experiences-info {
+  flex-grow: 70%; 
+}
+
+.experiences-year {
+  flex-basis: 30%;
+  flex-shrink: 0;
+}
+
+.experiences-info h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.experiences-info p {
+  font-size: 16px;
+  margin: 5px 0;
+  text-align: left ;
+}
+
+.experiences-year p {
+  font-size: 16px;
+  text-align: right;
+  margin: 5px 0;
+}
+
+.highlight{
+  color: #007BFF;
+}
+
+
+#interests {
+  
+  margin-bottom: 20px;
+  text-align: left;
+  margin-left: 5vw;
+  margin-bottom: 60px;
+
+}
+
+#interests h2 {
+  font-size: 40px;
+  margin-bottom: 40px; 
+  font-weight: normal;
+}
+
+#interests ul {
+  list-style-type: none; 
+  padding-left: 0; 
+  margin-left: 0; 
+
+}
+
+#interests li {
+  font-size: 16px;
+  line-height: 1.6; 
+  margin-bottom: 8px; 
+}
+
+#interests li::before {
+  content: "- "; 
+  color: #333; 
+  padding-right: 8px; 
+}
+
+#interests a {
+  color: #007BFF; 
+  text-decoration: none; 
+}
+
+#interests a:hover {
+  text-decoration: underline; 
+}
+
+
+#about p:nth-of-type(1){
+  margin-top: 40px;
+}
+
+#about p:nth-of-type(n+2) {
+  margin-top: 20px;
+}
+
+section {
+  padding: 50px 0;
+  text-align: center;
+}
+
+
+footer {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 1rem;
+  border-top: solid 1px #e0dfdf;
+}
+
+/* Smooth scrolling effect for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive styles for a better mobile experience */
+@media (max-width: 600px) {
+  .nav-list li {
+    display: block;
+    margin: 0;
+  }
+  .sidebar h2 {
+    font-size: 18px;
+  }
+
+  .sidebar p {
+    font-size: 14px;
+  }
+  
+
+  .nav-list li a {
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .content-container {
+    grid-template-columns: 1fr; /* Stack the sidebar and about section on top of each other */
+  }
+    
+}
+
+.sidebar p:nth-of-type(2) {
+  font-size: 0.9em;  
+  color: #8e40c9; 
+  font-style: italic; 
+  margin-top: 5px; 
+  margin-bottom: 5px; 
+}
+
+
+.skill-container {
+  margin-bottom: 10px;
+  margin-right: 100px;
+  padding-left: 42px;
+}
+
+.skill-name {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+
+}
+
+.skill-bar {
+  width: 100%;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 20px;
+  
+  
+}
+
+.skill-level {
+  height: 20px;
+  background-color: #4285F4;
+  border-radius: 10px;
+  transition: width 0.5s ease-in-out;
+  
+}
+
+#education{
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#education h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: left;
+
+  margin-left: 5vw;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  font-weight: normal;
+  color: #555;
+  
+}
+
+.degree {
+  display: flex;
+  align-items:left;
+  margin-bottom: 15px;
+  padding-left: 5vw;
+  
+  
+}
+
+.degree-info {
+  flex-basis: 70%; 
+}
+
+.degree-year {
+  flex-basis: 30%;
+  flex-shrink: 0;
+ 
+}
+
+.degree-info h3 {
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+
+  
+}
+
+.degree-info p {
+  font-size: 16px;
+  margin: 5px 0;
+  text-align: left;
+  
+  
+}
+
+.degree-year p {
+  font-size: 16px;
+  text-align: left;
+  margin: 5px 0;
+  margin-right: 40px;
+}
+
+.credentials {
+  font-size: 16px;
+  font-style: italic;
+  margin-top: 120px;
+  text-align: left;
+  margin-left: 5vw;
+}
+
+#experiences{
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+#experiences h2 {
+  font-size: 40px;
+  text-align: left;
+  margin-left: 5vw;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  font-weight: normal;
+  color: #555;
+}
+
+.experiences {
+  display: flex;
+  align-items:center;
+  margin-bottom: 15px;
+  padding-left: 5vw;
+ text-align: left;
+}
+
+.experiences-info {
+  flex-grow: 70%; 
+}
+
+.experiences-year {
+  flex-basis: 30%;
+  flex-shrink: 0;
+  
+  
+}
+
+.experiences-info h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.experiences-info p {
+  font-size: 16px;
+  margin: 5px 0;
+  text-align: left ;
+}
+
+.experiences-year p {
+  font-size: 16px;
+  text-align: right;
+  margin-right: 10px;
+
+}
+
+.highlight{
+  color: #007BFF;
+}
+
+
+#interests {
+  
+  text-align: left;
+  margin-left: 5vw;
+  padding-bottom: 60px;
+
+}
+
+#interests h2 {
+  font-size: 40px;
+  margin-bottom: 60px;
+  margin-top: 60px;
+  font-weight: normal;
+  color: #555;
+}
+
+#interests ul {
+  list-style-type: none; 
+  padding-left: 0; 
+  margin-left: 0; 
+}
+
+#interests li {
+  font-size: 16px;
+  line-height: 1.6; 
+  margin-bottom: 8px;
+  text-align: left;
+
+}
+
+#interests li::before {
+  content: "- "; 
+  color: #333; 
+  padding-right: 8px; 
+}
+
+#interests a {
+  color: #007BFF; 
+  text-decoration: none; 
+}
+
+#interests a:hover {
+  text-decoration: underline; 
+}
+
